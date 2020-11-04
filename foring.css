@@ -1,0 +1,193 @@
+/*foring CSS: v 0.1.1*/
+
+
+/*Global Animations*/
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes floatIn {
+	0% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-left {
+	0% {
+		transform: translatex(-30px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes float-right {
+	0% {
+		transform: translatex(30px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes floatUp {
+	0% {
+		transform: translatey(30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes push {
+	0% {
+        transition: ease-in 0.4s;
+		scale: 0.95;
+	}
+	100% {
+		scale: 1.0;
+	}
+}
+
+@keyframes pop {
+	0% {
+        transition: ease-in 0.4s;
+		scale: 1.05;
+	}
+	100% {
+		scale: 1.0;
+	}
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes wobble {
+    33% {
+      transform: rotate(5deg);
+    }
+    66% {
+      transform: rotate(-5deg);
+    }
+}
+
+
+
+/*Animation Classes*/
+.fade{
+    animation: fadeIn 0.8s !important;
+}
+
+.floatIn{
+    animation: floatIn 0.4s !important;
+}
+
+.float-right{
+    animation: float-right 0.4s !important;
+}
+
+.float-left{
+    animation: float-left 0.4s !important;
+}
+
+.floatUp{
+    animation: floatUp 0.4s !important;
+}
+
+.shake {
+    animation: shake 0.4s !important;
+}
+
+.wobble {
+    animation: wobble 0.4s !important;
+}
+
+
+/*Hover Animations*/
+.hover-grow:hover{
+    transition: ease-in 0.1s; 
+    scale: 1.05;
+}
+
+.hover-shrink:hover{
+    transition: ease-in 0.1s; 
+    scale: 0.95;
+}
+
+.hover-push:hover{
+    animation: push 0.4s ease-in !important;
+}
+
+.hover-pop:hover{
+    animation: pop 0.4s ease-in !important;
+}
+
+.hover-rotate-right:hover{
+    transition: ease-in 0.3s;
+    transform: rotate(4deg);
+}
+
+.hover-rotate-left:hover{
+    transition: ease-in 0.3s;
+    transform: rotate(-4deg);
+}
+
+.hover-float-up:hover{
+    transition: ease-in 0.2s;
+    transform: translateY(-5px);
+}
+
+.hover-float-down:hover{
+    transition: ease-in 0.2s;
+    transform: translateY(5px);
+}
+
+.hover-float-left:hover{
+    transition: ease-in 0.2s;
+    transform: translateX(-5px);
+}
+
+.hover-float-right:hover{
+    transition: ease-in 0.2s;
+    transform: translateX(5px);
+}
+
+.hover-shake:hover{
+    animation: shake 0.4s ease-in !important;
+}
+
+.hover-wobble:hover{
+    animation: wobble 0.4s ease-in !important;
+}
+
+.hover-skew-right:hover{
+	transform: skewX(-8deg);
+}
+
+.hover-skew-left:hover{
+	transform: skewX(8deg);
+}
